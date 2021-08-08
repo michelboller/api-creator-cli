@@ -2,7 +2,7 @@ const express = require('express')
 
 const routes = express.Router()
 
-routes.post('/<%=props.name%>', async (req, res) => {
+routes.get('/<%=props.name%>', async (req, res) => {
     return res.json({
         ok: true
     })
