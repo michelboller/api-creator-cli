@@ -1,0 +1,77 @@
+{
+  "_from": "api-creator-cli",
+  "_id": "api-creator-cli@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-46rP6s2r989RFw0q8XUqrhDcfqkI5xHtfQzSK5U7Rna0XGWRwXwyc3QdUSZaxCRAzkKx+g0Dx7GBsc5dPybUSw==",
+  "_location": "/api-creator-cli",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "api-creator-cli",
+    "name": "api-creator-cli",
+    "escapedName": "api-creator-cli",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/api-creator-cli/-/api-creator-cli-0.0.3.tgz",
+  "_shasum": "180f2381c5b6dbbcc6bbe247446d2ad0c667897a",
+  "_spec": "api-creator-cli",
+  "_where": "D:\\Programas\\nodejs\\tests",
+  "bin": {
+    "api": "bin/api"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "express": "^4.17.1",
+    "gluegun": "^3.3.4"
+  },
+  "deprecated": false,
+  "description": "A CLI that creates server.js and routes.js with express",
+  "devDependencies": {
+    "jest": "^25.0.0",
+    "prettier": "^1.12.1",
+    "standard": "^12.0.1"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "readme.md",
+    "docs",
+    "bin"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "CLI",
+    "Simple api creator",
+    "API",
+    "API creator"
+  ],
+  "license": "MIT",
+  "name": "api-creator-cli",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "scripts": {
+    "coverage": "jest --coverage",
+    "format": "prettier --write **/*.{js,json} && standard --fix",
+    "lint": "standard",
+    "snapupdate": "jest --updateSnapshot",
+    "test": "jest",
+    "watch": "jest --watch"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "version": "0.0.3"
+}

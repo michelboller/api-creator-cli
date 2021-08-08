@@ -1,0 +1,11 @@
+const express = require('express')
+
+const routes = express.Router()
+
+routes.post('/<%=props.name%>', async (req, res) => {
+    return res.json({
+        ok: true
+    })
+})
+
+module.exports = routes
