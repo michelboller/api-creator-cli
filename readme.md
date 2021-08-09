@@ -35,14 +35,14 @@ Server da API criado com sucesso!
 ```
 
 
-### api generate-routes [your route]
+### api generate-route [HTTP VERB] [ROUTE NAME]
 ```shell
-/your-directory> api generate-routes banana
+/your-directory> api generate-routes get banana
 ```
 if this command run correctly this message must be apear:
 
 ```
-A rota banana foi criada com sucesso!
+[GET] A rota banana foi criada com sucesso!
 ```
 ***
 

@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'generate-routes',
+    name: 'generate-route',
     description: 'Cria ao aquivo routes.js de uma API dentro de api/src',
     run: async toolbox => {
         const {
@@ -11,19 +11,20 @@ module.exports = {
             }
         } = toolbox
 
-        if (!parameters.first) {
-            error('Sua rota deve conter um nome')
+        if (!parameters.first && !parameters.second) {
+            error('Sua rota deve conter um nome e um verbo http')
             return
         }
 
         await template.generate({
             template: 'routes.js.ejs',
-            target: 'api/src/routes.js',
+            target: `api/src/router/route.${parameters.second}.js`,
             props: {
-                name: parameters.first
+                verb: parameters.first,
+                name: parameters.second
             }
         })
 
-        success(`A rota ${parameters.first} foi criada com sucesso!`)
+        success(`[${(parameters.first).toUpperCase()}] A rota ${parameters.second} foi criada com sucesso!`)
     }
 }

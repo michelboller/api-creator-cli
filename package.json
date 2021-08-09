@@ -61,6 +61,7 @@
     "singleQuote": true
   },
   "scripts": {
+    "server": "node api/src/server.js",
     "coverage": "jest --coverage",
     "format": "prettier --write **/*.{js,json} && standard --fix",
     "lint": "standard",
