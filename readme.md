@@ -37,7 +37,7 @@ Server da API criado com sucesso!
 
 ### api generate-route [HTTP VERB] [ROUTE NAME]
 ```shell
-/your-directory> api generate-routes get banana
+/your-directory> api generate-route get banana
 ```
 if this command run correctly this message must be apear:
 
